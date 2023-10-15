@@ -9,7 +9,10 @@ seems to be playing an old school text-based adventure
 game on his computer. There are corridors leading to the
 south and east. The exit is to the west.""",
 
-    "exits": {"south": "Admins"} # COMPLETE ME! ADD EXITS!
+    "exits": {"south": "Admins"},
+    "exits": {"east": "Tutor"} ,
+    "exist": {"west": "Parking"}
+     # COMPLETE ME! ADD EXITS!
 }
 
 room_admins = {
@@ -19,6 +22,8 @@ room_admins = {
     """You are leaning agains the door of the systems managers'
 room. Inside you notice Matt "MJ" John and Simon Jones. They
 ignore you. To the north is the reception.""",
+
+    "exits": {"north": "Reception"},
 
     # ADD EXITS HERE!
 }
@@ -32,6 +37,8 @@ stares at his huge monitor, ignoring you completely.
 On the desk you notice a cup of coffee and an empty
 pack of biscuits. The reception is to the west.""",
 
+    "exits": {"west": "Reception"},
+
     # ADD EXITS HERE!
 }
 
@@ -42,6 +49,9 @@ room_parking = {
     """You are standing in the Queen's Buildings parking lot.
 You can go south to the COMSC reception, or east to the
 general office.""",
+
+    "exits": {"south": "Reception"},
+    "exits": {"east": "Office"},
 
     # ADD EXITS HERE!
 }
@@ -54,6 +64,8 @@ room_office = {
 30-36 Newport Road. The cashier looks at you with hope
 in their eyes. If you go west you can return to the
 Queen's Buildings.""",
+
+    "exits": {"west": "Parking"},
 
     # ADD EXITS HERE!
 }
